@@ -1,0 +1,17 @@
+made basic layout.
+properties added => new, save, print, cut, copy, paste, undo, redo, size.
+made logic for undo.
+removing properties print, cut, copy, paste, undo, redo, as they can be handled by the browser.
+readding properties print, cut, copy, paste, undo, redo, as they can't be handled by a mobile browser.
+will add all the menu bar items in a hamburger menu for mobile.
+
+# 1st june 2024 00:00 
+completed properties => new, save, print, cut, copy, paste, undo, redo, size
+remaining properties => none
+remaining ui => hamburger menu.
+
+
+// cut, copy, paste unsupported on mobile device.
+!! issue resolved => not supported on unsecure connections. => to solve: deployed to vercel
+
+hamburger menu => design dropped

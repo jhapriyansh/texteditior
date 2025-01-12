@@ -1,0 +1,78 @@
+@media print {
+  textarea {
+    background: #fff !important;
+  }
+  .menuBar {
+    display: none;
+  }
+}
+
+.svgImg {
+  position: absolute;
+  height: 4vw;
+  top: 1vh;
+  left: 1vw;
+  z-index: 10;
+  visibility: hidden;
+}
+
+.actionBtn {
+  font-size: 2vh;
+  border-radius: 50px;
+  background: #818181;
+  border: 2px solid transparent;
+  padding: 4px;
+  color: #fff;
+  transition: 150ms ease-in;
+  transition-property: all;
+  &:hover {
+    background: #fff;
+    color: black;
+    border-color: #b0b0b0;
+  }
+  &:active {
+    color: white;
+    background: #818181;
+  }
+}
+
+.sizeSelector {
+  font-size: 2vh;
+  border: 2px solid transparent;
+  border-radius: 15px;
+  transition: 150ms border ease-in;
+  &:hover {
+    border: 2px solid #818181;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .App {
+    flex-direction: row;
+  }
+  .svgImg {
+    visibility: visible;
+  }
+
+  .menuBar {
+    position: absolute;
+    left: 0;
+    align-items: center;
+    padding-left: 0;
+    padding-top: 8vh;
+    height: 100vh;
+    transition: 150ms width ease-in;
+    overflow: hidden;
+    flex-direction: column;
+  }
+  textarea {
+    padding-left: 15vw;
+    height: 90vh;
+    width: 100vw;
+  }
+  .sizeselect {
+    bottom: 8vh;
+    left: 3vw;
+    right: 3vw;
+  }
+}
